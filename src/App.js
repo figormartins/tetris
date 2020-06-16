@@ -1,10 +1,12 @@
 import React from 'react'
 import Tetris from './components/Tetris'
+import GlobalStyle from './styles/global'
 
 const App = () => (
-  <div className="App">
+  <>
+    <GlobalStyle />
     <Tetris />
-  </div>
+  </>
 )
 
 export default App
