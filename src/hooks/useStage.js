@@ -6,8 +6,8 @@ export const useStage = (player, resetPlayer) => {
   const [stage, setStage] = useState(createStage())
 
   useEffect(() => {
-    const updateStage = prevState => {
-      const newStage = prevState.map(row =>
+    const updateStage = prevStage => {
+      const newStage = prevStage.map(row =>
         row.map(cell => (
           cell[1] === 'clear' ? [0, 'clear'] : cell)
         )

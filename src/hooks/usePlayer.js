@@ -1,6 +1,6 @@
 import { useState, useCallback } from 'react'
 
-import { TETROMINOS, radomTetromino } from '../tetrominos'
+import { TETROMINOS, randomTetromino } from '../tetrominos'
 import { STAGE_WIDTH, checkCollision } from '../gameHelpers'
 
 export const usePlayer = () => {
@@ -54,7 +54,7 @@ export const usePlayer = () => {
   const resetPlayer = useCallback(() => {
     setPlayer({
       pos: { x: STAGE_WIDTH / 2 - 2, y: 0 },
-      tetromino: radomTetromino().shape,
+      tetromino: randomTetromino().shape,
       collided: false
     })
   }, [])
