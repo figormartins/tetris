@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
+import font from '../fonts/Pixel-LCD-7.woff'
+
 export default createGlobalStyle`
   * {
     margin: 0;
@@ -12,6 +14,6 @@ export default createGlobalStyle`
   }
   @font-face {
     font-family: 'Pixel';
-    src: url('../fonts/Pixel-LCD-7.woff') format('woff');
+    src: url(${font}) format('woff');
   }
 `
